@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Didex Trader</string>
+
+    <string name="txtSymbol">symbol</string>
+    <string name="base_currency_title">BaseCurrencySh</string>
+    <string name="quote_currency_title">QuoteCurrency</string>
+</resources>

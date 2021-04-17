@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+        <variable
+            name="vm"
+            type="com.vahidimehr.didextrader.ui.main.MainViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.detail.DetailFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/symbol_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:onItemClick="@{vm::onItemClick}"
+            app:symbols="@{vm.symbolListLiveData.data}" />
+
+    </FrameLayout>
+</layout>
